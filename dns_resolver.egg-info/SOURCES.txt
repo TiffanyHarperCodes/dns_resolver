@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+dns_resolver.egg-info/PKG-INFO
+dns_resolver.egg-info/SOURCES.txt
+dns_resolver.egg-info/dependency_links.txt
+dns_resolver.egg-info/top_level.txt
+src/__init__.py
+src/dns_cache.py
+src/dns_packet.py
+src/main.py
+src/resolver.py
+src/transport.py
+tests/__init__.py
+tests/test_dns_packet.py
