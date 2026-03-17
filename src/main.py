@@ -1,5 +1,8 @@
 import argparse
 from src.resolver import DNSResolver
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 def main():
