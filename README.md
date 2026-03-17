@@ -43,8 +43,12 @@ python -m src.resolver example.com
 
 ## Status & Roadmap
 
-- Skeleton implemented. First working query in progress.
-- Future improvements:
-  - Handle recursive queries
-  - Support multiple record types (A, AAAA, CNAME, MX)
-  - Add persistent caching and logging
+- [x] DNS packet encoding (DNSHeader, DNSQuestion, DNSRecord)
+- [x] DNS packet decoding (DNSHeader, DNSQuestion, DNSRecord)
+- [x] Unit tests for encoding and decoding
+- [x] Logging setup
+- [ ] Transport layer (UDP send/receive)
+- [ ] Iterative resolver (query a known resolver e.g. 8.8.8.8)
+- [ ] In-memory caching with TTL
+- [ ] Refactor to recursive resolver (follow referrals from root servers)
+- [ ] Support multiple record types (A, AAAA, CNAME, MX)
