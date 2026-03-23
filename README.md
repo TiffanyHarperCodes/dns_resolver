@@ -3,18 +3,9 @@
 ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-in_progress-orange?style=flat-square)
 
-A DNS resolver implemented from scratch in Python using only the standard library, featuring a modular design that demonstrates query handling, packet parsing, and caching across network protocols.
-
 ## Overview
 
-This project demonstrates:
-
-- Low-level DNS packet construction and parsing
-- UDP network communication
-- Modular OOP design
-- In-memory caching with TTL
-
-This project also provides hands-on exposure to networking fundamentals, including DNS resolution, UDP communication, and protocol design.
+A DNS resolver built from scratch in Python using only the standard library. Demonstrates low-level DNS packet construction and parsing, UDP communication, modular OOP design, and in-memory caching with TTL.
 
 ## Architecture
 
@@ -38,7 +29,7 @@ Layers:
 ```
 Bash or Zsh
 
-python -m src.resolver example.com
+python -m src.main example.com
 ```
 
 ## Status & Roadmap
@@ -47,7 +38,7 @@ python -m src.resolver example.com
 - [x] DNS packet decoding (DNSHeader, DNSQuestion, DNSRecord)
 - [x] Unit tests for encoding and decoding
 - [x] Logging setup
-- [ ] Transport layer (UDP send/receive)
+- [x] Transport layer (UDP send/receive)
 - [ ] Iterative resolver (query a known resolver e.g. 8.8.8.8)
 - [ ] In-memory caching with TTL
 - [ ] Refactor to recursive resolver (follow referrals from root servers)

@@ -158,7 +158,7 @@ class DNSPacket:
          #b'\x04\xd2\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x06google\x03com\x00\x00\x01\x00\x01'           
     
     @classmethod
-    def decode(cls, data: bytes) -> "DNSPacket":
+    def decode(cls, data: bytes) -> DNSPacket:
         """
         Deserialize bytes received from network into DNSPacket.
         """
